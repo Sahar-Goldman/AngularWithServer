@@ -1,0 +1,5 @@
+<div class="movie" *ngFor="let movie of movies$ | async">
+    <h1>{{movie.caption}}</h1>
+    <p>{{movie.description}}</p>
+    <div class="image" [style.background-image]="'url(' + movie.poster + ')'">
+</div>
